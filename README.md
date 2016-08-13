@@ -1,5 +1,5 @@
 # SEO ID
-[![Build Status](https://travis-ci.org/dream-group/seo-id.svg?branch=1.0.0)](https://travis-ci.org/dream-group/seo-id)
+[![Build Status](https://travis-ci.org/dream-group/seo-id.svg?branch=master)](https://travis-ci.org/dream-group/seo-id)
 
 SEO ID generation and decoding library.
 
