@@ -27,10 +27,13 @@ class SeoID {
 		}
 		
 		foreach ($extra as $e) {
-			if (!is_string($e)) {
+			if ($e !== NULL && !is_string($e)) {
 				throw new InvalidArgumentException('Only expecting a variadic set of strings');
 			}
 		}
+		
+		// Remove all NULL-s
+		$extra = array_filter($extra);
 		
 		// Implode variadic args in order
 		$extra = implode(' ', $extra);

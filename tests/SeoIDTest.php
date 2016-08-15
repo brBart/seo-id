@@ -32,6 +32,11 @@ class SeoIDTest extends PHPUnit_Framework_TestCase
 			SeoID::build(123, 'foo', 'bar', 'õäöü')
 		);
 		
+        $this->assertEquals(
+			"123-foo-bar-oaou",
+			SeoID::build(123, 'foo', NULL, 'bar', 'õäöü')
+		);
+		
     }
 	
     public function testParse()
